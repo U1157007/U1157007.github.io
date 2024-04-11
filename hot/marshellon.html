@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>芸芸網</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background: #444;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .artwork {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            height: fit-content;
+            background: #fff;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border-radius: 30px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .artwork:hover {
+            transform: translateY(-20px);
+        }
+        .artwork img {
+            border-radius: 30px;
+            width: 50%;
+            display: block;
+        }
+        .description {
+            padding: 15px;
+            text-align: center;
+        }
+        .description h2 {
+            margin: 0 0 10px 0;
+        }
+        .navigation {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .navigation button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>芸芸的藝術作品區</h1>
+</div>
+
+<div class="gallery">
+    <!-- 藝術作品1 -->
+    <div class="artwork">
+        <img src="IMG_8246.JPG" alt="藝術作品1的描述">
+        <div class="description">
+            <h2>高潮咖波
+            </h2>
+            <p>這是我創作的第一件作品，靈感來自於...</p>
+        </div>
+    </div>
+    <div class="artwork">
+        <img src="IMG_8246.JPG" alt="藝術作品1的描述">
+        <div class="description">
+            <h2>咖波超人</h2>
+            <p>這是我創作的第一件作品，靈感來自於...</p>
+        </div>
+    </div>
+    <!-- 更多藝術作品可以這樣添加 -->
+</div>
+
+<div class="navigation">
+    <button onclick="window.location.href='more.html';">更多藝術作品</button>
+</div>
+
+</body>
+</html>
