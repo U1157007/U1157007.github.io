@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繪畫作品區</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background: #444;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .artwork {
+            background: #fff;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border-radius: 30px;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            height: fit-content;
+        }
+        .artwork img {
+            border-radius: 30px;
+            width: 100%;
+            height: 400px; /* 固定圖片高度 */
+            object-fit: cover; /* 確保圖片按比例縮放 */
+            display: block;
+        }
+        .description {
+            padding: 15px;
+            text-align: center;
+        }
+        .navigation {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .navigation button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>繪畫作品展示</h1>
+</div>
+
+<div class="gallery">
+    <!-- 添加繪畫作品圖片 -->
+    <div class="artwork">
+        <img src="./painting/paint_1.jpg" alt="繪畫作品1">
+        <div class="description">
+            <h2>飛哥與小佛</h2>
+            <p>上課無聊所繪製</p>
+        </div>
+    </div>
+    <div class="artwork">
+        <img src="./painting/paint_2.jpg" alt="繪畫作品1">
+        <div class="description">
+            <h2>向日葵</h2>
+            <p>參加微課程畫的，大家都說很像我。</p>
+        </div>
+    </div>
+    <div class="artwork">
+        <img src="./painting/paint_3.jpg" alt="繪畫作品1">
+        <div class="description">
+            <h2>兔兔</h2>
+            <p>參加系周會畫的</p>
+        </div>
+    </div>
+    <div class="artwork">
+        <img src="./painting/paint_4.jpg" alt="繪畫作品1">
+        <div class="description">
+            <h2>鈴芽之旅</h2>
+            <p>大1英文課畫的</p>
+        </div>
+    </div>
+    <div class="artwork">
+        <img src="./painting/paint_5.jpg" alt="繪畫作品1">
+        <div class="description">
+            <h2>英文課本封面</h2>
+            <p>作業</p>
+        </div>
+    </div>
+    <div class="artwork">
+        <img src="./painting/paint_6.jpg" alt="繪畫作品1">
+        <div class="description">
+            <h2>蠟筆小新</h2>
+            <p>上課畫的</p>
+        </div>
+    </div>
+    <div class="artwork">
+        <img src="./painting/paint_7.jpg" alt="繪畫作品1">
+        <div class="description">
+            <h2>索隆</h2>
+            <p>突發奇想</p>
+        </div>
+    </div>
+    <div class="artwork">
+        <img src="./painting/paint_8.jpg" alt="繪畫作品1">
+        <div class="description">
+            <h2>老皮</h2>
+            <p>英文課畫的</p>
+        </div>
+    </div>
+    <div class="artwork">
+        <img src="./painting/paint_9.jpg" alt="繪畫作品1">
+        <div class="description">
+            <h2>巧達</h2>
+            <p>午休時間畫的</p>
+        </div>
+    </div>
+    <!-- 更多繪畫作品可以這樣添加 -->
+</div>
+
+<div class="navigation">
+    <button onclick="window.location.href='index.html';">回首頁</button>
+</div>
+
+</body>
+</html>
