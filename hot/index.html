@@ -19,24 +19,31 @@
         }
         .gallery {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: center;
             padding: 20px;
         }
         .artwork {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            height: fit-content;
             background: #fff;
             margin: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
-            border-radius: 30px; /* 这里添加圆角 */
+            border-radius: 30px;
+            flex-direction: column;
+            align-items: center;
         }
         .artwork:hover {
             transform: translateY(-20px);
         }
         .artwork img {
-            border-radius: 30px; 
+            border-radius: 30px;
             width: 100%;
-            height: auto;
+            height: 500px; /* 固定圖片高度 */
+            object-fit: cover; /* 確保圖片按比例縮放 */
             display: block;
         }
         .description {
@@ -78,27 +85,24 @@
 </div>
 
 <div class="gallery">
-    <!-- 藝術作品1 -->
+    <!-- 編織作品區 -->
     <div class="artwork">
-        <img src="IMG_8246.JPG" alt="藝術作品1的描述">
+        <a href="weaving.html">
+            <img src="IMG_8781.JPG" alt="編織作品區">
+        </a>
         <div class="description">
-            <h2>高潮咖波
-            </h2>
-            <p>這是我創作的第一件作品，靈感來自於...</p>
+            <h2>編織作品區</h2>
+            <p>編織時間，編織快樂</p>
         </div>
     </div>
+    <!-- 繪畫作品區 -->
     <div class="artwork">
-        <img src="IMG_8246.JPG" alt="藝術作品1的描述">
+        <a href="painting.html">
+            <img src="IMG_8246.JPG" alt="繪畫作品區">
+        </a>
         <div class="description">
-            <h2>咖波超人</h2>
-            <p>這是我創作的第一件作品，靈感來自於...</p>
-        </div>
-    </div>
-    <div class="artwork">
-        <img src="IMG_8246.JPG" alt="藝術作品1的描述">
-        <div class="description">
-            <h2>咖波超人</h2>
-            <p>這是我創作的第一件作品，靈感來自於...</p>
+            <h2>繪畫作品區</h2>
+            <p>心情繪畫</p>
         </div>
     </div>
     <!-- 更多藝術作品可以這樣添加 -->
