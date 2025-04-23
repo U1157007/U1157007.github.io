@@ -1,0 +1,136 @@
+/* style.css */
+:root {
+    --font-stack: "Noto Sans TC", sans-serif;
+    --primary-color: #333;
+    --bg-light: #f9f9f9;
+    --border-color: #ddd;
+    --gap-size: 0.5rem;
+}
+html {
+    font-family: var(--font-stack);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+}
+.site-nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #555;
+    padding: 0.5rem;
+}
+.site-nav a:hover,
+.site-nav a.active {
+    color: #000;
+}
+.btn-login {
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 0.3rem 0.8rem;
+}
+.content {
+    padding: 2rem;
+}
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: #eef;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.intro ul,
+.features ul {
+    list-style: disc inside;
+    margin-top: 1rem;
+}
+
+/* 主題網格區塊 */
+.topics-grid {
+    padding: 2rem 0;
+}
+.topics-grid h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.topic-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+.topic-item img {
+    width: 80%;
+    max-width: 900px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.topic-item img:hover {
+    transform: scale(1.05);
+}
+.topic-item span {
+    margin-top: 0.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    margin-top: 2rem;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .site-header,
+    .content,
+    .site-footer {
+        padding: 1rem;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .site-nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .site-nav a {
+        margin: 0.5rem;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
