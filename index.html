@@ -1,57 +1,69 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>芸芸網</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
-        .header {
-            background: #444;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .navigation {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .navigation button {
-            background-color: #444;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .navigation button:hover {
-            background-color: #666;
-        }
-    </style>
+    <title>遇見華語</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="logo">遇見華語</div>
+        <nav class="site-nav">
+            <a href="index.html" class="active">首頁</a>
+            <a href="about.html">關於我們</a>
+            <a href="features.html">功能介紹</a>
+            <a href="#" class="btn-login">會員登入</a>
+        </nav>
+    </header>
 
+    <main class="content">
+        <section class="hero">
+            <h1>歡迎來到 遇見華語</h1>
+            <p>讓初級華語學習者輕鬆學會 CEFR A2 等級詞彙、語法與句型。</p>
+        </section>
 
-<div class="header">
-    <h1>芸芸的藝術作品區</h1>
-</div>
+        <section class="intro">
+            <h2>我們的特色</h2>
+            <ul>
+                我們的教學平台融合 互動式課文教學，透過生動的對話與情境設計，讓學習者彷彿置身於真實語境中；搭配 趣味課後練習，不僅加強記憶，更提升學習動機。後台系統採用彈性管理，教師可 隨時更新新主題內容，確保教學資源持續新鮮、緊貼學習需求。
+            </ul>
+        </section>
 
-<div class="navigation">
-    <button onclick="window.location.href='./hot/index.html';">前往芸芸網</button>
-</div>
+        <section class="topics-grid">
+            <h2>主題選單</h2>
+            <div class="grid-container">
+                <a href="short-stories.html" class="topic-item">
+                    <img src="images/story.png" alt="短篇故事">
+                    <span>短篇故事</span>
+                </a>
+                <a href="fables.html" class="topic-item">
+                    <img src="images/preStory.png" alt="寓言故事">
+                    <span>寓言故事</span>
+                </a>
+                <a href="daily-life.html" class="topic-item">
+                    <img src="images/life.png" alt="日常生活">
+                    <span>日常生活</span>
+                </a>
+                <a href="festivals.html" class="topic-item">
+                    <img src="images/culture.png" alt="文化節慶">
+                    <span>文化節慶</span>
+                </a>
+                <a href="travel.html" class="topic-item">
+                    <img src="images/travel.png" alt="旅遊">
+                    <span>旅遊</span>
+                </a>
+                <a href="social-issues.html" class="topic-item">
+                    <img src="images/topic.png" alt="社會議題">
+                    <span>社會議題</span>
+                </a>
+            </div>
+        </section>
+    </main>
 
+    <footer class="site-footer">
+        <p>&copy; 2025 遇見華語 All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
